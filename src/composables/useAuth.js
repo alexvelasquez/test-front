@@ -1,5 +1,6 @@
 import { useHttp } from './useHttp'
 import { useForm } from "vee-validate";
+import { useRouter } from "vue-router";
 import { ref } from 'vue';
 import * as yup from "yup";
 const { errors, values, meta, handleSubmit, defineInputBinds } = useForm({
@@ -12,11 +13,13 @@ const { errors, values, meta, handleSubmit, defineInputBinds } = useForm({
 
 export const useAuth = () => {
     const { post } = useHttp()
+    const router = useRouter();
+
     const errorMessage = ref("")
     /**
     * Methods for authentication user
     */
-    const auth = handleSubmit(async (values) => {
+    const login = handleSubmit(async (values) => {
         try {
             await post("/login", values);
             router.push("/home");
@@ -31,6 +34,6 @@ export const useAuth = () => {
     });
 
     return {
-        auth, errors, meta, defineInputBinds, errorMessage
+        login, errors, meta, defineInputBinds, errorMessage
     }
 }
