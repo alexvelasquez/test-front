@@ -1,5 +1,5 @@
 <template>
-  <div class=" min-h-screen flex justify-center items-center">
+  <div class="bg-slate-50 min-h-screen flex justify-center items-center">
 
     <router-view></router-view>
   </div>
