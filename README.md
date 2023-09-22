@@ -1,7 +1,37 @@
-# Vue 3 + Vite
+# TEST FRONT
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Comenzando 🚀
 
-## Recommended IDE Setup
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Información 📋
+```
+VUE: 3.3.4
+VITE: 4.4.5
+```
+
+### Instalación 🔧
+_Clonar_
+```
+git clone git@github.com:alexvelasquez/test-front.git (ssh)
+cd test-front
+```
+
+_Instalar Dependencias_
+```
+yarn install
+```
+
+_Iniciar servidor local(puerto:8000)_
+```
+yarn dev
+En el navegador: http://localhost:8000
+```
+
+_Test Unitarios_
+```
+yarn test
+```
+
+## Autores ✒️
+* **Alex Velasquez**
