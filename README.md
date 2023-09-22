@@ -22,6 +22,11 @@ _Instalar Dependencias_
 yarn install
 ```
 
+_Configurar variable de entorno local_
+```
+ cp .env.local.example .env.local
+```
+
 _Iniciar servidor local(puerto:8000)_
 ```
 yarn dev
